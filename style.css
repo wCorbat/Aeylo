@@ -1520,7 +1520,6 @@ hr{
 }
 
 .btncontainer-plans button {
-    overflow-x: hidden;
     padding: .7em 1.5em;
     font-size: 1em;
     margin-top: 4.5em;
@@ -1544,14 +1543,14 @@ footer{
 }
 
 .h1-topico-rodape-1{
-    overflow-x: hidden;
+
     margin-left: -17em;
     font-size: 1em;
     
 }
 
 .h1-topico-rodape-2{
-    overflow-x: hidden;
+
     margin-top: -16.3em;
     margin-left: -6.5em;
     font-size: 1em;
@@ -1564,26 +1563,26 @@ footer{
 }
 
 .topicos-rodape{
-    overflow-x: hidden;
+
     position: relative;
     margin-left: -10em;
 
 }
 
 .h1-topico-rodape-2{
-    overflow-x: hidden;
+
     margin-left: -8em;
 
 }
 
 .topicos-rodape-2 a{
-    overflow-x: hidden;
+
     margin-left: 4em;
 
 }
 
 .topicos-rodape-1 a{
-    overflow-x: hidden;
+
     margin-left: 5em;
 
 }
