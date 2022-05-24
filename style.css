@@ -1,0 +1,2637 @@
+html{
+    scroll-behavior: smooth;
+    
+
+}
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+::selection{
+    background-color: #FF77CB;
+    color: #FFF;
+
+}
+
+header{
+    background-color: #000;
+    width: 100%;
+    height: 100px;
+    color: white;
+    position: fixed;
+    z-index: 50;
+    margin-top: -1.5em;
+    
+}
+
+.logotipo{
+    font-family: 'Josefin Sans';
+    text-align: left;
+    margin-left: -3em;
+    font-size: 4em;
+    margin-top: .36em;
+    float: left;
+    padding-left: 5em;
+
+}
+
+.logotipo a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Josefin Sans';
+
+}
+
+#o{
+    font-family: 'Josefin Sans';
+    font-size: 4em;
+    margin-top: .36em;
+    font-weight: bold;
+
+}
+
+#o a{
+    text-decoration: none;
+    color: #FF77CB;
+    font-family: 'Josefin Sans';
+
+}
+
+.fa-bag-shopping{
+    color: #fff;
+    text-align: right;
+    font-size: 2.5em;
+    float: right;
+    margin: -3.7em;
+    margin-top: -2.8em;
+    margin-right: 7em;
+    text-transform: capitalize;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.fa-bag-shopping:hover{
+    transform: scale(1.05);
+    
+}
+
+.minha_conta{
+    font-family: 'Josefin Sans';
+    text-align: right;
+    font-size: 1.5em;
+    float: right;
+    margin: -4em;
+    margin-right: 5em;
+    text-transform: capitalize;
+    position: relative;
+
+}
+
+.minha_conta a{
+    text-decoration: none;
+    color: #ddd;
+    font-family: 'Josefin Sans';
+    font-weight: bolder;
+
+}
+
+.minha_conta a:hover{
+    transition: .4s;
+    color: #fff;
+
+}
+
+#btn-mobile{
+    display: none;
+
+}
+
+nav{
+    width: 100%;
+    height: 5em;
+    position: relative;
+    top: 5.4em;
+
+}
+
+ul{
+    display: flex;
+    padding: 0 5em 0;
+     
+}
+    
+li{
+    font-size: 1.5em;
+    font-family: 'Josefin Sans';
+    text-transform: capitalize;
+    margin: auto;
+    display: flex;
+    margin-top: 1.19em;
+    font-weight: bolder;
+
+}
+    
+li a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Josefin Sans';
+      
+}
+
+nav li :hover{
+    background-image: linear-gradient(#FF77CB, #FF56C6);
+    padding: .8em 1.5em;
+    transition: .2s;
+    margin-top: -.85em;
+    color: #fff;
+    width: 100%;
+    transform: scale(1.05);
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: .1em ;
+
+}
+
+.slider{
+    width: 85%;
+    overflow: hidden;
+    margin: auto;
+    background-size: cover;
+    margin-top: 6.1em;
+
+}
+
+.slides{
+    width: 500%;
+    display: flex;
+
+}
+
+.slide img{
+    width: 100%;
+    margin: auto;
+
+}
+
+.slides input{
+    display: none;
+
+}
+
+/*Clip-path*/
+
+.slide{
+    width: 20%;
+    transition: 2s;
+
+}
+    /*clip-path: polygon(7% 7%, 93% 7%, 93% 93%, 7% 93%); deixa rno pai, no caso o slide
+    transition: clip-path 1s;
+
+.s1:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+}
+
+.s2:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+}
+
+.s3:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+
+}
+
+.s4:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+}
+*/
+
+/*css for automatic slider*/
+
+.navigation-auto{
+    display: flex;
+    position: absolute;
+    margin: auto;
+    left: 75%;
+    padding-top: 2%;
+    padding-right: 5%;
+
+}
+
+.navigation-auto div{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 7px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+    
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+    display: flex;
+    position: absolute;
+    margin: auto;
+    left: 75%;
+    padding-top: 2%;
+    padding-right: 5%;
+
+}
+
+.manual-btn{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 7px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+
+}
+
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+
+}
+
+.bg-search{
+    width: 100%;
+    height: 3em;
+    background-color: #fff;
+    position: absolute;
+
+}
+
+.search-box{
+    position: absolute;
+    top: 5em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 2.5em;
+    background-color: #fff;
+    line-height: 40px;
+    padding: .38em;
+    border-radius: 2em;
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    padding-left: 1em;
+    display: flex;
+
+}
+
+.search-input{
+    background-color: #fff;
+    color: #000;
+    outline: none;
+    border: none;
+    line-height: 2.6em;
+    width: 0;
+    float: left;
+    font-size: 1em;
+    transition: .7s ease;
+
+}
+
+.search-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #fff;
+    padding: .8em;
+    border-radius: 2em;
+    float: left;
+    color: #000;
+    transition: .4s ease;
+
+}
+
+.search-box:hover> .search-input, .search-input:focus{
+    width: 30em;
+
+}
+
+.search-box:hover> .search-btn, .search-input:focus + search-btn{
+    background-color: rgb(250, 250, 250);
+    color: #101010;
+
+}
+
+#destaques{
+    font-size: 2em;
+    padding: .8em;
+    width: 25%;
+    margin-top: 5em;
+    text-align: right;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    font-family: 'Josefin Sans';
+    border-radius: 0 .2em .2em 0;
+
+}
+
+.card-info1, .card-info2, .card-info3, .card-info4, .card-info5 {
+    position: relative;
+    color: #fff;
+    opacity: 0;
+    display: block;
+    padding: 2em;
+    padding-bottom: 1.3em;
+    padding-top: 1em;
+    margin-left: -9em;
+    letter-spacing: 1px;
+
+}
+
+.card-info1 a:hover, .card-info2 a:hover, .card-info3 a:hover, .card-info4 a:hover, .card-info5 a:hover{
+    opacity: .7;
+
+}
+
+.text-title1, .text-title2, .text-title3, .text-title4, .text-title5 {
+    font-size: 1em;
+    margin-top: 3em;
+    
+}
+   
+.text-body1, .text-body2, .text-body3, .text-body4, .text-body5 {
+    padding-left: -1em;
+    margin-top: 1em;
+    font-size: .8em;
+    font-style: italic;
+
+}
+
+.category1, .category2, .category3, .category4, .category5{
+    font-size: .8em;
+    margin-top: 1.1em;
+
+}
+
+.card-button1, .card-button2, .card-button3, .card-button4, .card-button5 {
+    padding: 1.2em 1.5em;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: transparent;
+    transition: 0.4s ease;
+    cursor: pointer;
+    margin-top: .2em;
+    color: #fff;
+
+}
+
+.icons-hover .fa-solid{
+    color: rgb(117, 117, 117);
+    cursor: pointer;
+    margin: .1em;
+    margin-top: 1.4em;
+
+}
+
+.icons-hover :hover{
+    transition: .4s;
+    color: #FF77CB;
+    cursor: pointer;
+
+}
+
+.card-info1:hover, .card-info2:hover, .card-info3:hover, .card-info4:hover, .card-info5:hover{
+    opacity: 1;
+    transition: 1s;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+
+}
+
+.card-button1, .card-button2, .card-button3, .card-button4, .card-button5{
+    background: #000;
+    color: #fff;
+    opacity: 1;
+    
+}
+
+.card-button1:hover, .card-button2:hover, .card-button3:hover, .card-button4:hover, .card-button5:hover{
+    background: #fff;
+    border: 2px solid #000;
+    color: #000;
+    opacity: 1;
+
+}
+
+.destaques_container{
+    width: 80%;
+    margin: auto;
+    margin-top: 5em;
+    padding: 1em;
+    position: relative;
+    background-size: cover;
+    display: grid;
+
+}
+
+.grid-wrap ul li{
+    list-style: none;
+    padding: 0;
+    margin: 1em;
+
+}
+
+.grid-wrap{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+
+}
+
+.grid-wrap ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8%, auto));  /*minmax tag chave para responsividade GRID*/
+    grid-auto-flow: dense;
+    grid-gap: 2px;
+    justify-content: center;
+    padding: 0;
+    margin: auto;
+
+}
+
+.grid-wrap ul li{
+    position: relative;
+
+}
+
+.grid-wrap ul li:nth-child(1){
+    grid-row: span 1; /* linhas que irá se posicionar*/
+    grid-column: span 6; /* Quantas colunas irá ocupar*/
+
+}
+
+.grid-wrap ul li:nth-child(2){
+    grid-row: span 1;
+    grid-column: span 6;
+
+}
+
+.grid-wrap ul li:nth-child(3){
+    grid-row: span 1;
+    grid-column: span 4;
+
+}
+
+.grid-wrap ul li:nth-child(4){
+    grid-row: span 1;
+    grid-column: span 4;
+
+}
+
+.grid-wrap ul li:nth-child(5){
+    grid-row: span 1;
+    grid-column: span 4;
+
+}
+
+.grid-wrap ul img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+#abstrato, #anime, #cartoon, #manga, #realista, #pintura, #tresd{
+    overflow-x: hidden;
+    font-size: 2em;
+    padding: .8em;
+    width: 25%;
+    margin-top: 3em;
+    text-align: right;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    font-family: 'Josefin Sans';
+    border-radius: 0 .2em .2em 0;
+
+}
+
+.visitar-secao{
+    font-size: 2.5em;
+    padding: .2em;
+    width: 25%;
+    margin-top: -.7em;
+    float: right;
+    text-align: left;
+    background-color: rgb(240, 240, 240);
+    position: relative;
+    font-family: 'Josefin Sans';
+    border-radius: .2em 0 0 .2em;
+    margin-bottom: 2em;
+    text-transform: capitalize;
+
+}
+
+.visitar-secao a{
+    text-decoration: none;
+    color: #aaa;
+    margin-left: .4em;
+
+}
+
+.visitar-secao a:hover{
+    color: #FF77CB;
+    transition: .2s;
+
+}
+
+.swiper{
+    width: 75%;
+    position: relative;
+    overflow-x: hidden;
+
+
+    
+}
+
+.abstrato_container img, .anime_container img, .cartoon_container img, .manga_container img, .realista_container img, .pintura_container img, .tresd_container img{
+    overflow-x: hidden;
+    margin: 0;
+    margin-bottom: 10em;
+    cursor: grab;
+
+
+}
+
+.info-abstrato a, .info-anime a, .info-cartoon a, .info-manga a, .info-realista a, .info-pintura a, .info-tresd a{
+    overflow-x: hidden;
+    margin: auto;
+    width: 8em;
+    text-decoration: none;
+    color: #fff;
+    height: 5em;
+    margin-top: 2em;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.3);
+    z-index: 5;
+    display: block;
+    font-family: 'Josefin Sans';
+    font-weight: bolder;
+    line-height: 1.5em;
+    text-transform: capitalize;
+    opacity: 0;
+    border-radius: 0 0 .2em 0;
+    padding: 2em;
+    padding-bottom: 5em;
+    letter-spacing: 1px;
+
+}
+
+.button-section{
+    position: relative;
+    margin-top: 1em;
+
+}
+
+.info-abstrato a:hover, .info-anime a:hover, .info-cartoon a:hover, .info-manga a:hover, .info-realista a:hover, .info-pintura a:hover, .info-tresd a:hover{
+    overflow-x: hidden;
+    opacity: 1;
+    transition: 1s;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    margin-top: 0;
+
+}
+
+.manga img{
+    border: 1px solid #ccc;
+    padding: 0;
+
+}
+
+.fa-arrow-right-to-line{
+    color: #FF77CB;
+    font-family: 'Josefin Sans';
+    text-align: right;
+    font-size: 1.5em;
+    float: right;
+    margin: -5em;
+    margin-right: .1em;
+    text-transform: capitalize;
+    position: relative;
+    
+}
+
+.fa-circle-info {
+    color: #ddd;
+    font-size: 1.5em;
+    float: left;
+    margin: auto;
+    margin-left: .3em;
+    text-transform: capitalize;
+    position: relative;
+    margin-top: -4.9em;
+    cursor: help;
+
+}
+
+hr{
+    width: 100%;
+    margin-top: 8em;
+
+}
+
+.titulo-fim-de-secao{
+    margin-top: 2em;
+    font-family: 'Anton';
+    font-size: 5em;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: left;
+    position: relative;
+    margin-left: 2em;
+
+}
+
+.title-section-cards{
+    margin-top: 5em;
+    margin-bottom: 3em;
+    text-align: center;
+    font-family: 'Josefin Sans';
+    font-size: 2em;
+    position: relative;
+
+}
+
+.planos_container, .cards-planos, .plano-black, .plano-ouro, .plano-rosa{
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    padding: 4em;
+    margin: auto;
+    position: relative;
+
+}
+
+.anel-black, .anel-ouro, .anel-rosa{
+    position: absolute;
+    margin: auto;
+    height: 8em;
+    margin-top: -4em;
+
+}
+
+.card-black, .card-ouro, .card-rosa {
+    margin-top: 7em;
+    width: 38em;
+    height: 24em;
+    background: rgb(55, 55, 55);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.5s;
+    border-radius: .2em;
+    margin: auto;
+    border: 2px solid #aaa;
+    border-radius: .5em;
+
+}
+   
+.title-black, .title-ouro, .title-rosa{
+    padding-top: 1em;
+    margin-bottom: 5em;
+    margin-top: 0.5em;
+    font-size: 2em;
+    color: #ccc;
+    
+}
+   
+.pricecontainer-black, .pricecontainer-ouro, .pricecontainer-rosa {
+    width: 10em;
+    height: 24em;
+    margin-top: -1em;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 2em rgba(0, 0, 0, 0.1);
+
+}
+   
+.price-black, .price-ouro, .price-rosa{
+    margin-top: -7em;
+    color: #ccc;
+    padding: 4.2em 0 0 0;
+    font-size: 2em;
+
+}
+   
+.pricedescriptor-black, .pricedescriptor-ouro, .pricedescriptor-rosa {
+    color: #ccc;
+    padding: 0 0 1em 1em;
+    margin-left: -1.5em;
+    margin-top: -1em;
+    font-size: 1.1em;
+    padding-bottom: 1.1em;
+
+}
+   
+.includes-black, .includes-ouro, .includes-rosa {
+    color: #ccc;
+    margin-top: -15em;
+    margin-left: -6em;
+    font-size: 1.2em;
+    text-transform: capitalize;
+
+}
+   
+.benefitlist-black li, .benefitlist-ouro li, .benefitlist-rosa li{
+    color: #ccc;
+    margin: auto;
+    margin-top: .2em;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    position: absolute;
+    text-align: left;
+
+}
+   
+.benefitlist-black li:nth-child(1), .benefitlist-ouro li:nth-child(1), .benefitlist-rosa li:nth-child(1) {
+    margin-top: .5em;
+    margin-left: 6.2em;
+
+}
+
+.benefitlist-black li:nth-child(2), .benefitlist-ouro li:nth-child(2), .benefitlist-rosa li:nth-child(2) {
+    margin-top: 2em;
+    margin-left: 6.2em;
+
+}
+
+.benefitlist-ouro li:nth-child(3), .benefitlist-rosa li:nth-child(3) {
+    margin-top: 3.5em;
+    margin-left: 6.2em;
+}
+
+
+.benefitlist-rosa li:nth-child(4) {
+    margin-top: 5em;
+    margin-left: 6.2em;
+}
+
+.saiba-mais-card-black, .saiba-mais-card-ouro, .saiba-mais-card-rosa{
+    margin-top: 6em;
+    color: #ccc;
+    margin-left: 2.5em;
+    float: left;
+
+}
+
+.saiba-mais-card-black a, .saiba-mais-card-ouro a, .saiba-mais-card-rosa a{
+    margin-top: 6em;
+    color: #fff;
+    margin-left: 2.5em;
+    text-decoration: none;
+    float: left;
+
+}
+
+.saiba-mais-card-black:hover, .saiba-mais-card-ouro:hover, .saiba-mais-card-rosa:hover{
+    color: #fff;
+    transition: .6s;
+
+}
+   
+.btncontainer-plans button {
+    font-family: 'Josefin Sans';
+    padding: 1.5em 3em;
+    font-size: 1.2em;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: transparent;
+    transition: 0.4s ease;
+    cursor: pointer;
+    margin-top: 6.4em;
+    margin-left: 2.5em;
+    color: #fff;
+
+}
+   
+.btncontainer-plans button:hover {
+    background: #fff;
+    border: 2px solid #000;
+    color: #000;
+    opacity: 1;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: .4s;
+    opacity: 1;
+    transform: scale(1.1);
+
+}
+
+.ayelo-video-rodape{
+    overflow-x: hidden;
+    width: 100%;
+    margin-top: 25em;
+    position: relative;
+    
+}
+
+.ayelo-video-rodape video{
+    
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 1em;
+    position: absolute;
+    object-fit: cover;
+
+}
+
+.aylo-video-background{
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    padding-left: 5.2em;
+    font-family: 'Josefin Sans';
+    background-color: #000;
+    font-size: 2em;
+    color: #fff;
+    mix-blend-mode: multiply;
+    
+}
+
+footer{
+    overflow-x: hidden;
+    width: 100%;
+    height: 47em;
+    margin: auto;
+    background-color: #000;
+    margin-top: -1.6em;
+    font-family: sans-serif;
+    text-align: left;
+    z-index: 2;
+    position: relative;
+
+}
+
+footer a{
+    overflow-x: hidden;
+    text-decoration: none;
+
+}
+
+.topicos-rodape{
+    overflow: hidden;
+    position: relative;
+    margin-left: -30em;
+
+}
+
+.h1-topico-rodape-1{
+    font-size: 1.5em;
+    margin-left: 6.7em;
+    padding-top: 3em;
+    padding-bottom: .2em;
+    z-index: 5;
+    color: #fff;
+    font-weight: bolder;
+    font-family: 'Josefin Sans';
+
+}
+
+.topicos-rodape-1 ul, .topicos-rodape-2 ul{
+    display: block;
+
+}
+
+.topicos-rodape-1 a:hover, .topicos-rodape-2 a:hover{
+    color: #fff;
+    transition: .4s;
+    transform: scale(1.2);
+
+}
+
+.topicos-rodape-1 a{
+    color: #ccc;
+    margin-left: 4.1em;
+    font-size: .8em;
+
+}
+
+.topicos-rodape-1{
+    display: block;
+    color: #fff;
+    margin-left: 30em;
+    margin-right: 5em;
+
+}
+
+.h1-topico-rodape-2{
+    font-size: 1.5em;
+    margin-left: 18em;
+    margin-top: -15.8em;
+    padding-bottom: .2em;
+    z-index: 5;
+    color: #fff;
+    font-weight: bolder;
+    font-family: 'Josefin Sans';
+
+}
+
+.topicos-rodape-2 a{
+    color: #ccc;
+    font-size: .8em;
+    margin-left: 18.2em;
+    margin-top: .02em;
+
+}
+
+.topicos-rodape-2{
+    display: block;
+    color: #fff;
+    margin-left: 30em;
+    margin-right: 5em;
+
+}
+
+.h1-topico-rodape-3{
+    font-size: 1.5em;
+    margin-top: -13.3em;
+    padding-bottom: .2em;
+    z-index: 5;
+    color: #fff;
+    font-weight: bolder;
+    font-family: 'Josefin Sans';
+
+}
+
+.redes-sociais{
+    margin-left: 73em;
+    margin-top: -3.8em;
+    position: absolute;
+    margin-right: 5em;
+
+}
+
+.redes-sociais a{
+    color: #ccc;
+    font-size: 2em;
+    padding: .2em;
+
+}
+
+#facebook:hover, #instagram:hover, #linkedin:hover, #twitter:hover, #youtube:hover, #whatsapp:hover{
+    transform: scale(1.2);
+    color: #fff;
+    transition: .4s;
+    
+}
+
+.logo-web-c{
+    float: right;
+    width: 15em;
+    margin: .5em 5em 0 0;
+ 
+}
+
+.desenvolvimento{
+    color: #ccc;
+    position: relative;
+    margin: 2em 9.3em 0 0;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    text-align: right;
+
+}
+
+.hr-rodape{
+    margin-top: 10em;
+
+}
+
+.direitos-reservados{
+    font-size: 1em;
+    color: #ccc;
+    text-align: center;
+    margin: 1em 0 0 20em;
+   
+}
+
+@media only screen and (max-width: 600px){  /* Phones 600px abaixo */
+
+html{
+    overflow-x: hidden;
+
+}
+
+header{
+    height: 50px;
+    z-index: 2;
+    margin-top: -3.5em;
+    position: absolute;
+            
+}
+    
+.logotipo{
+    margin-left: -4em;
+    font-size: 2em;
+    margin-top: .33em;
+    padding-left: 5em;
+        
+}
+        
+#o{
+    font-size: 2em;
+    
+}
+        
+.fa-bag-shopping{
+    font-size: 1em;
+    margin-top: -3.6em;
+    margin-right: 8.5em;
+
+}
+
+.minha_conta{
+    font-size: 1em;
+    margin: -3.4em;
+    margin-right: 2em;
+
+}
+
+#btn-mobile{
+    display: block;
+    margin: auto;
+    margin-left: 43.6%;
+    top: -1em;
+    position: relative;
+    z-index: 6;
+    opacity: 0;
+
+}
+
+#menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    z-index: 5;
+    left: 0;
+    height: 0;
+    background-color: #fff;
+    margin: 1em auto;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
+
+}
+
+#nav.active #menu{
+    height: calc(100vh - 80px);
+    visibility: visible;
+    overflow-y: auto;
+
+}
+
+#menu a{
+    padding: 1em 17.7em;
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+
+
+}
+
+#btn-mobile{
+    display: flex;
+    padding: .36em;
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    gap: .5em;
+    font-size: 1em;
+
+}
+
+#hamburguer{
+    width: 20px;
+    height: 2px;
+    border-top: 2px solid #fff;
+    position: absolute;
+    margin-left: 47.4%;
+    margin-top: -1em;
+    z-index: 2;
+    display: block;
+    cursor: pointer;
+
+}
+
+#hamburguer:after, #hamburguer::before{
+    width: 20px;
+    height: 2px;
+    content: "";
+    display: block;
+    background-color: #fff;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+
+}
+
+#nav.active #hamburguer{
+    border-top-color: transparent;
+
+}
+
+#nav.active #hamburguer::before{
+    transform: rotate(135deg);
+
+}
+
+#nav.active #hamburguer::after{
+    transform: rotate(-135deg);
+    top: -7px;
+
+}
+
+nav{
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    position: absolute;
+    top: 2em;
+    
+}
+
+li{
+    font-size: 1em;
+    font-family: 'Josefin Sans';
+    text-transform: capitalize;
+    position: relative;
+    margin-left: -26em;
+    padding: 0em;
+
+}
+    
+li a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'Josefin Sans';
+    position: relative;
+    margin: auto;
+      
+}
+
+nav li :hover{
+    transition: .2s;
+    margin-top: 0;
+    margin-left: 21.5%;
+    color: #fff;
+    width: 100%;
+    transform: scale(1.2);
+
+}
+    
+.slider{
+    width: 100%;
+    margin-top: 3.5em;
+    position: relative;
+    
+}
+    
+.navigation-auto div, .manual-btn{
+    padding: 4px;
+
+}
+
+.navigation-manual, .navigation-auto{
+    display: none;
+    
+}
+
+.bg-search{
+    margin-top: -.1em;
+
+}
+
+.search-input{
+    font-size: .8em;
+
+
+}
+
+.search-btn{
+    padding: .8em;
+
+
+}
+
+.search-box{
+    top: 3em;
+
+}
+
+
+.search-box:hover> .search-input, .search-input:focus{
+    width: 16em;
+
+
+}
+
+#destaques{
+    padding: .5em;
+    font-size: 1.2em;
+
+}
+
+.grid-wrap ul{
+    display: block;
+
+}
+
+.card-button1, .card-button2, .card-button3, .card-button4, .card-button5{
+    opacity: 1;
+    padding: 1em;
+    
+}
+
+.visitar-secao{
+    padding: .5em;
+    font-size: .8em;
+
+}
+
+.destaques_container, .abstrato_container, .anime_container, .cartoon_container, .manga_container, .realista_container, .pintura_container, .tresd_container{
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    z-index: -1;
+
+
+}
+
+.button-section{
+    font-size: .8em;
+    margin-top: 1em;
+
+}
+
+#abstrato{
+    overflow-x: hidden;
+    margin-top: 2em;
+    padding: .5em;
+    font-size: 1.2em;
+
+}
+
+#anime, #cartoon, #manga, #realista, #pintura, #tresd{
+    padding: .5em;
+    font-size: 1.2em;
+    margin-top: -5em;
+
+}
+
+.visitar-secao{
+    padding: .5em;
+    font-size: 1em;
+
+}
+
+.grid-wrap{
+    margin: 1em;
+
+}
+
+.info-abstrato a, .info-anime a, .info-cartoon a, .info-manga a, .info-realista a, .info-pintura a, .info-tresd a{
+    overflow-x: hidden;
+    margin: auto;
+    font-size: .6em;
+    width: 9em;
+    height: 3.2em;
+    margin-top: 2em;
+    opacity: 0;
+    border-radius: 0 0 .2em 0;
+    padding: 2em;
+    padding-bottom: 7.5em;
+    line-height: 1.3em;
+
+    
+}
+
+.info-abstrato a:hover, .info-anime a:hover, .info-cartoon a:hover, .info-manga a:hover, .info-realista a:hover, .info-pintura a:hover, .info-tresd a:hover{
+    overflow-x: hidden;
+    opacity: 0;
+
+}
+
+.swiper{
+    overflow-x: hidden;
+    width: 155%;
+    position: relative;
+
+}
+
+.button-section{
+    overflow-x: hidden;
+    font-size: 1em;
+    margin-top: 1.2em;
+    padding: 1em 1.5em;
+
+}
+
+.fa-arrow-right-to-line{
+    overflow-x: hidden;
+    display: none;
+    
+}
+
+.fa-circle-info {
+    overflow-x: hidden;
+    display: none;
+
+}
+
+hr{
+    overflow-x: hidden;
+    margin-top: -2.5em;
+    
+}
+
+.titulo-fim-de-secao{
+    overflow-x: hidden;
+    font-size: 3.2em;
+    text-align: left;
+    margin: 1em;
+    letter-spacing: 0;
+
+}
+
+.title-section-cards{
+    overflow-x: hidden;
+    font-size: 1.2em;
+    white-space: wrap;
+    margin: 4em 2em;
+
+}
+
+
+.planos_container, .cards-planos, .plano-black, .plano-ouro, .plano-rosa{
+    overflow-x: hidden;
+    padding: 2em;
+    margin-left: -.6em;
+    position: relative;
+
+}
+
+.planos_container{
+    overflow-x: hidden;
+    margin-bottom: -10em;
+
+}
+
+.anel-black, .anel-ouro, .anel-rosa{
+    height: 4em;
+    margin-top: -2.1em;
+    margin-left: -2em;
+
+}
+
+.card-black, .card-ouro, .card-rosa {
+    width: 17em;
+    height: 28em;
+    margin: auto;
+    align-items: center;
+    position: relative;
+
+}
+   
+.title-black, .title-ouro, .title-rosa{
+    padding-top: 1.2em;
+    margin-bottom: 3em;
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    color: #ccc;
+    
+}
+   
+.pricecontainer-black, .pricecontainer-ouro, .pricecontainer-rosa {
+    width: 17em;
+    height: 12em;
+    margin-top: 2.8em;
+
+}
+   
+.price-black, .price-ouro, .price-rosa{
+    margin-top: -5.5em;
+    font-size: 2em;
+
+}
+   
+.pricedescriptor-black, .pricedescriptor-ouro, .pricedescriptor-rosa{
+    font-size: 1em;
+    margin-left: -.8em;
+    margin-top: -1em;
+
+}
+   
+.includes-black, .includes-ouro, .includes-rosa {
+    color: #ccc;
+    margin-top: 1.5em;
+    margin-left: 0;
+    font-size: .9em;
+    text-transform: capitalize;
+
+}
+   
+.benefitlist-black li, .benefitlist-ouro li, .benefitlist-rosa li{
+    font-size: .7em;
+
+}
+   
+.benefitlist-black li:nth-child(1), .benefitlist-ouro li:nth-child(1), .benefitlist-rosa li:nth-child(1) {
+    margin-left: -5.5em;
+    margin-top: -.3em;
+
+}
+
+.benefitlist-black li:nth-child(2), .benefitlist-ouro li:nth-child(2), .benefitlist-rosa li:nth-child(2) {
+    margin-top: 1.2em;
+    margin-left: -5.5em;
+}
+
+.benefitlist-ouro li:nth-child(3), .benefitlist-rosa li:nth-child(3) {
+    margin-top: 2.6em;
+    margin-left: -5.5em;
+}
+
+
+.benefitlist-rosa li:nth-child(4) {
+    margin-top: 4em;
+    margin-left: -5.5em;
+
+}
+
+.saiba-mais-card-black, .saiba-mais-card-ouro, .saiba-mais-card-rosa{
+    margin-top: -1.5em;
+    margin-left: 2em;
+    font-size: .8em;
+
+}
+
+.btncontainer-plans button {
+    overflow-x: hidden;
+    padding: .7em 1.5em;
+    font-size: 1em;
+    margin-top: 4.5em;
+    margin-left: 0;
+
+}
+
+.aylo-video-background{
+    overflow-x: hidden;
+    width: 100%;
+    padding: 2em;
+    margin-left: -2em;
+    text-align: center;
+    font-size: 1em;
+    
+}
+
+footer{
+    overflow-x: hidden;
+    height: 35em;
+
+}
+
+.h1-topico-rodape-1{
+    overflow-x: hidden;
+    margin-left: -17em;
+    font-size: 1em;
+    
+}
+
+.h1-topico-rodape-2{
+    overflow-x: hidden;
+    margin-top: -16.3em;
+    margin-left: -6.5em;
+    font-size: 1em;
+    
+}
+
+.h1-topico-rodape-3{
+    overflow-x: hidden;
+    display: none;
+}
+
+.topicos-rodape{
+    overflow-x: hidden;
+    position: relative;
+    margin-left: -10em;
+
+}
+
+.h1-topico-rodape-2{
+    overflow-x: hidden;
+    margin-left: -8em;
+
+}
+
+.topicos-rodape-2 a{
+    overflow-x: hidden;
+    margin-left: 4em;
+
+}
+
+.topicos-rodape-1 a{
+    overflow-x: hidden;
+    margin-left: 5em;
+
+}
+
+.topicos-rodape-2 a{
+    overflow-x: hidden;
+    margin-left: 16.3em;
+
+}
+
+.redes-sociais{
+    margin-top: 1.5em;
+    margin-left: 14.5em;
+    text-align: left;
+    display: flex;
+
+}
+
+.redes-sociais a{
+    font-size: 1.6em;
+    padding-bottom: 1em;
+
+}
+
+.redes-sociais i{
+    padding-bottom: .5em;
+
+}
+
+.logo-web-c{
+    float: none;
+    width: 8em;
+    margin: auto;
+    margin: 4em 0 0 1em;
+ 
+}
+
+.desenvolvimento{
+    display: none;
+
+}
+
+.hr-rodape{
+    margin-top: 7em;
+
+}
+
+.direitos-reservados{
+    font-size: .7em;
+    color: #ccc;
+    margin-top: -6em;
+    text-align: center;
+    margin-left: -1.5em;
+   
+}
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px){  /* Phones horizontais, tablets verticais */
+
+header{
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+    margin-top: -1.2em;
+        
+}
+
+.logotipo{
+    margin-left: -4em;
+    font-size: 2em;
+    margin-top: .38em;
+    padding-left: 5em;
+    
+}
+    
+#o{
+    font-family: 'Josefin Sans';
+    font-size: 2em;
+    margin-top: .37em;
+    
+}
+
+.fa-bag-shopping{
+    font-size: 1.2em;
+    margin-top: -3.1em;
+    margin-right: 7.1em;
+
+}
+    
+.minha_conta{
+    font-size: 1em;
+    margin: -3.4em;
+    margin-right: 2em;
+
+}
+
+nav{
+    height: 2.6em;
+    top: 1.9em;
+
+}
+
+ul{
+    padding: 0 1em;
+     
+}
+
+li{
+    font-size: 1em;
+    margin-top: .9em;
+
+}
+
+nav li :hover{
+    padding: .4em 1em;
+    margin-top: -.5em;
+
+}
+
+.slider{
+    width: 100%;
+    margin-top: 1.9em
+
+}
+
+.navigation-manual, .navigation-auto{
+    left: 66%;
+    margin-top: .5em;
+
+}
+
+.navigation-auto div, .manual-btn{
+    padding: 4px;
+
+}
+
+.bg-search{
+    margin-top: .4em;
+
+}
+
+.search-input{
+    font-size: .8em;
+
+}
+
+.search-btn{
+    padding: .8em;
+
+}
+
+.search-box:hover> .search-input, .search-input:focus{
+    width: 25em;
+
+}
+
+.card-button{
+    padding: -1em;
+}
+
+.card-button1, .card-button2, .card-button3, .card-button4, .card-button5{
+    background: #000;
+    color: #fff;
+    opacity: 1;
+    padding: 1em;
+    
+}
+
+#destaques{
+    padding: .5em;
+    font-size: 1.2em;
+
+}
+
+.visitar-secao{
+    padding: .5em;
+    font-size: .8em;
+}
+
+.button-section{
+    font-size: .8em;
+    margin-top: 1em;
+
+}
+
+#abstrato{
+    margin-top: 2em;
+    padding: .5em;
+    font-size: 1.2em;
+}
+
+#anime, #cartoon, #manga, #realista, #pintura, #tresd{
+    padding: .5em;
+    font-size: 1.2em;
+    margin-top: -5em;
+
+}
+
+.visitar-secao{
+    padding: .5em;
+    font-size: 1em;
+
+}
+
+.destaques_container, .abstrato_container, .anime_container, .cartoon_container, .manga_container, .realista_container, .pintura_container, .tresd_container{
+    width: 100%;
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+    position: relative;
+    background-size: cover;
+    display: flex;
+
+}
+
+.grid-wrap{
+    margin: 1em;
+
+}
+
+.swiper{
+    width: 100%;
+    position: relative;
+
+}
+
+.info-abstrato a, .info-anime a, .info-cartoon a, .info-manga a, .info-realista a, .info-pintura a, .info-tresd a{
+    font-size: .6em;
+    width: 9em;
+    height: 3.2em;
+    margin-top: 2em;
+    opacity: 0;
+    padding: 2em;
+    padding-bottom: 7.5em;
+    line-height: 1.3em;
+
+}
+
+.button-section{
+    font-size: 1em;
+    margin-top: 1.2em;
+    padding: 1em 1.5em;
+
+}
+
+.fa-arrow-right-to-line{
+    font-size: 1em;
+    margin: -1em;
+    margin-right: .1em;
+    margin-top: 21.8em;
+    
+}
+
+.fa-circle-info {
+    display: none;
+
+}
+
+.titulo-fim-de-secao{
+    font-size: 2.5em;
+    letter-spacing: 0;
+
+}
+
+.title-section-cards{
+    font-size: 1.2em;
+
+}
+
+.planos_container, .cards-planos, .plano-black, .plano-ouro, .plano-rosa{
+    padding: 2em;
+
+}
+
+.anel-black, .anel-ouro, .anel-rosa{
+    height: 4em;
+    margin-top: -2.1em;
+    margin-left: 1.1em;
+
+}
+
+.card-black, .card-ouro, .card-rosa {
+    width: 25em;
+    height: 12em;
+    margin: auto;
+
+
+}
+   
+.title-black, .title-ouro, .title-rosa{
+    padding-top: 1.5em;
+    margin-bottom: 3em;
+    margin-top: 0.5em;
+    font-size: 1em;
+    
+}
+   
+.pricecontainer-black, .pricecontainer-ouro, .pricecontainer-rosa {
+    width: 7em;
+    height: 11.9em;
+    margin-top: -.4em;
+
+}
+   
+.price-black, .price-ouro, .price-rosa{
+    margin-top: -5em;
+    font-size: 1.2em;
+
+}
+   
+.pricedescriptor-black, .pricedescriptor-ouro, .pricedescriptor-rosa{
+    font-size: 1em;
+    margin-left: -.8em;
+    margin-top: -.4em;
+
+}
+   
+.includes-black, .includes-ouro, .includes-rosa {
+    margin-top: -10.5em;
+    margin-left: 7.2em;
+    font-size: .9em;
+
+}
+   
+.benefitlist-black li, .benefitlist-ouro li, .benefitlist-rosa li{
+    font-size: .7em;
+
+}
+   
+.benefitlist-black li:nth-child(1), .benefitlist-ouro li:nth-child(1), .benefitlist-rosa li:nth-child(1) {
+    margin-left: 10em;
+    margin-top: -.3em;
+
+}
+
+.benefitlist-black li:nth-child(2), .benefitlist-ouro li:nth-child(2), .benefitlist-rosa li:nth-child(2) {
+    margin-top: 1.2em;
+    margin-left: 10em;
+}
+
+.benefitlist-ouro li:nth-child(3), .benefitlist-rosa li:nth-child(3) {
+    margin-top: 2.6em;
+    margin-left: 10em;
+}
+
+
+.benefitlist-rosa li:nth-child(4) {
+    margin-top: 4em;
+    margin-left: 10em;
+}
+
+.saiba-mais-card-black, .saiba-mais-card-ouro, .saiba-mais-card-rosa{
+    margin-top: .2em;
+    margin-left: 2.1em;
+    font-size: .8em;
+
+}
+
+.btncontainer-plans button {
+    padding: .7em 1.5em;
+    font-size: .8em;
+    margin-top: 4.4em;
+    margin-left: 1.7em;
+
+}
+
+.aylo-video-background{
+    padding: 2em;
+    margin-left: -2em;
+    text-align: center;
+    font-size: 1em;
+    
+}
+
+footer{
+    overflow-x: hidden;
+    height: 25em;
+}
+
+.h1-topico-rodape-1{
+    margin-left: -1.7em;
+    font-size: 1em;
+    
+}
+
+.h1-topico-rodape-2{
+    margin-top: -14.3em;
+    margin-left: 9.5em;
+    font-size: 1em;
+    
+}
+
+.h1-topico-rodape-3{
+    font-size: 1em;
+}
+
+.topicos-rodape{
+    position: relative;
+    margin-left: -21.2em;
+
+}
+
+.topicos-rodape-1 a{
+    margin-left: -3.5em;
+
+}
+
+.topicos-rodape-2 a{
+    margin-left: 10.4em;
+
+}
+
+.redes-sociais{
+    margin-top: -1.2em;
+    margin-left: 48em;
+
+}
+
+.redes-sociais a{
+    font-size: 1em;
+
+}
+
+.logo-web-c{
+    float: right;
+    width: 8em;
+    margin: .5em 4em 0 0;
+ 
+}
+
+.desenvolvimento{
+    margin: 2em 9.3em 0 0;
+    font-size: .7em;
+
+}
+
+.hr-rodape{
+    margin-top: 3em;
+
+}
+
+.direitos-reservados{
+    font-size: .7em;
+    margin: .4em 0 0 -12em;
+   
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){  /* Tablets horizontais e acima */
+
+.logotipo{
+    margin-left: -4em;
+    
+}
+
+.minha_conta{
+    font-size: 1.3em;
+    top: -1.2em;
+    margin-right: 2em;
+    padding: .6em 1.3em;
+
+}
+
+.fa-bag-shopping{
+    font-size: 2.5em;
+    margin: -3.7em;
+    margin-top: -2.8em;
+    margin-right: 5.2em;
+
+}
+
+nav{
+    top: 5.6em;
+
+}
+
+ul{
+    padding: 0 1.5em;
+     
+}
+
+li{
+    font-size: 1.3em;
+    margin-top: 1.4em;
+
+}
+
+nav li :hover{
+    padding: .6em 1.3em;
+    margin-top: -.55em;
+
+}
+
+.slider{
+    width: 100%;
+
+}
+
+.navigation-manual, .navigation-auto{
+    left: 72%;
+
+}
+
+.navigation-auto div, .manual-btn{
+    padding: 6px;
+
+}
+
+.search-box{
+    top: 4em;
+
+}
+
+#destaques{
+    padding: .5em;
+    font-size: 1.6em;
+
+}
+
+.card-info1, .card-info2, .card-info3, .card-info4, .card-info5 {
+    padding: 2em;
+    padding-bottom: 1.3em;
+    padding-top: 1em;
+    margin-left: -9em;
+    letter-spacing: 1px;
+    font-size: .8em;
+
+}
+
+.card-info1 a:hover, .card-info2 a:hover, .card-info3 a:hover, .card-info4 a:hover, .card-info5 a:hover{
+    opacity: .7;
+
+}
+
+.text-title1, .text-title2, .text-title3, .text-title4, .text-title5 {
+    font-size: 1em;
+    margin-top: 3em;
+    
+}
+   
+.text-body1, .text-body2, .text-body3, .text-body4, .text-body5 {
+    padding-left: -1em;
+    margin-top: 1em;
+    font-size: .8em;
+
+}
+
+.category1, .category2, .category3, .category4, .category5{
+    font-size: .8em;
+    margin-top: 1.1em;
+
+}
+
+.card-button1, .card-button2, .card-button3, .card-button4, .card-button5 {
+    padding: 1em 1.2em;
+    margin-top: .2em;
+
+}
+
+#abstrato{
+    overflow-x: hidden;
+    margin-top: 2em;
+    padding: .5em;
+    font-size: 1.6em;
+
+}
+
+#anime, #cartoon, #manga, #realista, #pintura, #tresd{
+    padding: .5em;
+    font-size: 1.6em;
+    margin-top: -2em;
+
+}
+
+.visitar-secao{
+    padding: .5em;
+    font-size: 1.2em;
+    width: 15%;
+
+}
+
+.destaques_container, .abstrato_container, .anime_container, .cartoon_container, .manga_container, .realista_container, .pintura_container, .tresd_container{
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+    position: relative;
+    background-size: cover;
+    display: flex;
+
+}
+
+.grid-wrap{
+    margin: 1em;
+
+}
+
+.info-abstrato a, .info-anime a, .info-cartoon a, .info-manga a, .info-realista a, .info-pintura a, .info-tresd a{
+    overflow-x: hidden;
+    margin: auto;
+    font-size: .8em;
+    width: 7em;
+    height: 3.2em;
+    margin-top: 2em;
+    opacity: 0;
+    padding: 2em;
+    padding-bottom: 8em;
+
+}
+
+.button-section{
+    font-size: .9em;
+    margin-top: 1em;
+
+}
+
+.fa-arrow-right-to-line{
+    font-size: 1em;
+    float: right;
+    margin: -1em;
+    margin-right: .1em;
+    z-index: 5;
+    margin-top: 23em;
+    
+}
+
+.fa-circle-info {
+    display: none;
+
+}
+
+hr{
+    margin-top: -2em;
+
+}
+
+.titulo-fim-de-secao{
+    font-size: 3em;
+    letter-spacing: 0;
+
+}
+
+.title-section-cards{
+    font-size: 1.5em;
+
+}
+
+.planos_container, .cards-planos, .plano-black, .plano-ouro, .plano-rosa{
+    padding: 2.5em;
+
+}
+
+.anel-black, .anel-ouro, .anel-rosa{
+    height: 5em;
+    margin-top: -2.6em;
+    margin-left: .4em;
+
+}
+
+.card-black, .card-ouro, .card-rosa {
+    width: 30em;
+    height: 18em;
+    margin: auto;
+
+}
+   
+.title-black, .title-ouro, .title-rosa{
+    padding-top: 1.5em;
+    margin-bottom: 3em;
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    
+}
+   
+.pricecontainer-black, .pricecontainer-ouro, .pricecontainer-rosa {
+    width: 7em;
+    height: 18em;
+    margin-top: -.6em;
+
+}
+   
+.price-black, .price-ouro, .price-rosa{
+    margin-top: -5em;
+    font-size: 1.3em;
+
+}
+
+.includes-black, .includes-ouro, .includes-rosa {
+    margin-top: -12em;
+    margin-left: 5em;
+    font-size: 1.2em;
+    text-transform: capitalize;
+
+}
+   
+.benefitlist-black li, .benefitlist-ouro li, .benefitlist-rosa li{
+    font-size: 1em;
+
+}
+   
+.benefitlist-black li:nth-child(1), .benefitlist-ouro li:nth-child(1), .benefitlist-rosa li:nth-child(1) {
+    margin-left: 6.5em;
+
+}
+
+.benefitlist-black li:nth-child(2), .benefitlist-ouro li:nth-child(2), .benefitlist-rosa li:nth-child(2) {
+    margin-top: 2em;
+    margin-left: 6.5em;
+}
+
+.benefitlist-ouro li:nth-child(3), .benefitlist-rosa li:nth-child(3) {
+    margin-top: 3.5em;
+    margin-left: 6.5em;
+}
+
+
+.benefitlist-rosa li:nth-child(4) {
+    margin-top: 5em;
+    margin-left: 6.5em;
+}
+
+.saiba-mais-card-black, .saiba-mais-card-ouro, .saiba-mais-card-rosa{
+    margin-top: 3.5em;
+    margin-left: 1.5em;
+    font-size: .9em;
+
+}
+
+.btncontainer-plans button {
+    padding: 1em 2em;
+    font-size: .9em;
+    margin-top: 7em;
+    margin-left: 1.7em;
+
+}
+   
+.aylo-video-background{
+    padding: 2em;
+    margin-left: -2em;
+    text-align: center;
+
+}
+
+.h1-topico-rodape-1{
+    margin-left: -1.3em;
+    
+}
+
+.h1-topico-rodape-2{
+    margin-top: -15em;
+    margin-left: 8.2em;
+    
+}
+
+.topicos-rodape-1 a{
+    margin-left: -3.4em;
+
+}
+
+.topicos-rodape-2 a{
+    margin-left: 10.4em;
+
+}
+
+.topicos-rodape{
+    position: relative;
+    margin-left: -21.2em;
+
+}
+
+.redes-sociais{
+    margin-top: -2.7em;
+    margin-left: 55.8em;
+}
+
+.logo-web-c{
+    float: right;
+    width: 12em;
+    margin: .5em 5em 0 0;
+ 
+}
+
+.direitos-reservados{
+    font-size: 1em;
+    margin: 1em 0 0 -5em;
+   
+}
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){  /* Notebooks / Desktops e acima */
+
+.minha_conta{
+    margin: -4em;
+    margin-right: 5em;
+
+}
+
+nav{
+    top: 5.6em;
+
+}
+
+ul{
+    padding: 0 5em 0;
+     
+}
+
+li{
+    font-size: 1.4em;
+    margin-top: 1.25em;
+
+}
+
+nav li :hover{
+    padding: .7em 1.4em;
+    margin-top: -.65em;
+
+}
+
+.slider{
+    width: 90%;
+
+}
+
+.navigation-manual, .navigation-auto{
+    left: 74%;
+
+}
+
+.destaques_container{
+    width: 90%;
+    margin: auto;
+    margin-top: 4em;
+    padding: 1em;
+
+}
+
+#anime, #cartoon, #manga, #realista, #pintura, #tresd{
+    margin-top: 1em;
+
+}
+
+.visitar-secao a{
+    margin-left: .4em;
+
+}
+
+.visitar-secao a:hover{
+    transition: .2s;
+
+}
+
+.swiper{
+    width: 85%;
+
+}
+
+.abstrato_container img, .anime_container img, .cartoon_container img, .manga_container img, .realista_container img, .pintura_container img, .tresd_container img{
+    overflow-x: hidden;
+    margin: 0;
+    margin-bottom: 10em;
+    cursor: grab;
+
+}
+
+.manga img{
+    border: 1px solid #000;
+    padding: 0;
+
+}
+
+.titulo-fim-de-secao{
+    font-size: 4em;
+
+}
+
+.title-section-cards{
+    font-size: 1.8em;
+
+}
+
+.planos_container, .cards-planos, .plano-black, .plano-ouro, .plano-rosa{
+    padding: 2.5em;
+
+}
+
+.anel-black, .anel-ouro, .anel-rosa{
+    height: 6em;
+    margin-top: -3em;
+    margin-left: .4em;
+
+}
+
+.card-black, .card-ouro, .card-rosa {
+    margin-top: 7em;
+    width: 33em;
+    height: 19em;
+    margin: auto;
+
+}
+   
+.title-black, .title-ouro, .title-rosa{
+    padding-top: 1em;
+    margin-bottom: 3em;
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    color: #ccc;
+    
+}
+   
+.pricecontainer-black, .pricecontainer-ouro, .pricecontainer-rosa {
+    width: 8em;
+    height: 19em;
+    margin-top: -.75em;
+
+}
+   
+.price-black, .price-ouro, .price-rosa{
+    margin-top: -5em;
+    font-size: 1.5em;
+
+}
+   
+.includes-black, .includes-ouro, .includes-rosa {
+    color: #ccc;
+    margin-top: -12.5em;
+    margin-left: 6.2em;
+    font-size: 1.2em;
+
+}
+   
+.benefitlist-black li, .benefitlist-ouro li, .benefitlist-rosa li{
+    margin-top: .2em;
+    font-size: 1em;
+
+}
+   
+.benefitlist-black li:nth-child(1), .benefitlist-ouro li:nth-child(1), .benefitlist-rosa li:nth-child(1) {
+    margin-top: .1em;
+    margin-left: 4.5em;
+
+}
+
+.benefitlist-black li:nth-child(2), .benefitlist-ouro li:nth-child(2), .benefitlist-rosa li:nth-child(2) {
+    margin-top: 1.7em;
+    margin-left: 4.5em;
+}
+
+.benefitlist-ouro li:nth-child(3), .benefitlist-rosa li:nth-child(3) {
+    margin-top: 3.24em;
+    margin-left: 4.5em;
+}
+
+
+.benefitlist-rosa li:nth-child(4) {
+    margin-top: 4.8em;
+    margin-left: 4.5em;
+}
+
+.saiba-mais-card-black, .saiba-mais-card-ouro, .saiba-mais-card-rosa{
+    margin-top: 4em;
+    margin-left: 1.6em;
+
+}
+
+.btncontainer-plans button {
+    padding: 1.2em 2.5em;
+    font-size: 1em;
+    margin-top: 6.6em;
+    margin-left: 2em;
+
+}
+   
+.h1-topico-rodape-1{
+    margin-left: .9em;
+    
+}
+
+.h1-topico-rodape-2{
+    margin-top: -15em;
+    margin-left: 11.2em;
+    
+}
+
+.topicos-rodape-1 a{   
+    margin-left: -3.4em;
+
+}
+
+.topicos-rodape-2 a{
+    margin-left: 10.4em;
+
+}
+
+.topicos-rodape{
+    margin-left: -21.2em;
+
+}
+
+.redes-sociais{
+    margin-top: -2.7em;
+    margin-left: 60em;
+}
+
+}
+
+@media only screen and (min-width: 1200px){
+
+}
+
+
+/* Bugs 
+
+- Apenas no firefox o layout fica torto 
+- Dispositivos mobile real ficam com barra horizontal
+
+*/

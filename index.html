@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="author" content="Walison Corbat">
+    <meta name="description" content="Plataforma para divulgação de trabalhos digitais">
+    <meta name="keywords" content="Aeylo, ilustrações digitais, animes, mangás, arte 3d, realistas">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../Fontes/Corporate A Light.ttf">
+    <link rel="stylesheet" href="./Fontes/fontawesome-free-6.1.0-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+
+    <title>aeylo - A vitrine maravilhosa do artista digital</title>
+    
+</head>
+
+<body>      
+
+        <header>
+            <p class="logotipo"><a href="">aeyl<p id="o">o</id></a></p>
+            <p class="minha_conta"><a href="#">minha conta</a></p>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </header>
+
+        <nav id="nav" reveal>
+            <span id="hamburguer"></span>
+                <button id="btn-mobile">menu</button>
+
+            <ul id="menu">
+                <li><a href="#">abstrato</a></li>
+                <li><a href="#">anime</a></li>
+                <li><a href="#">cartoon</a></li>
+                <li><a href="#">mangá</a></li>
+                <li><a href="#">realista</a></li>
+                <li><a href="#">pintura</a></li>
+                <li><a href="#">3D</a></li>
+            </ul>
+        </nav>
+        
+        <!--image slider start-->
+        <div class="slider">
+            <div class="slides reveal">
+
+                <!--radio button start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <!--radio button end-->
+                <!--slide images start-->
+
+                <div class="slide s1 first">
+                    <a href="#"><img src="Imagens/banner-1gimp.png" alt="Desenho de uma garota de cabelos pretos segurando um mascote enquanto desbrava um lugar fantasioso"></a>
+                </div>
+                <div class="slide s2">
+                    <a href="#"><img src="Imagens/banner-2gimp.png" alt="Desenho de uma feiticeira negra apreciando uma borboleta de luz"></a>
+                </div>
+                <div class="slide s3">
+                    <a href="#"><img src="Imagens/banner-3gimp.png" alt="Desenho de uma garota de cabelos longos olhando para a tela"></a>
+                </div>
+                <div class="slide s4">
+                    <a href="#"><img src="Imagens/banner-4gimp.png" alt="Desenho 3d de uma gatora de cabelos cacheados castanhos"></a>
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--automatic navigation end-->
+                <!--manual navigation start-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!--manual navigation end-->
+            </div>
+        </div>
+
+        <span class="bg-search">
+        <div class="search-box">
+            <input type="text" placeholder="Procurando alguma arte ou artista?" class="search-input">
+            <a href="#" class="search-btn">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+
+        <h3 id="destaques">Destaques</h3>
+        <section class="destaques_container reveal">
+            <div class="grid-wrap">
+                <ul>
+                <li>
+                    <img src="Imagens/D1.jpg" alt="">
+                    <div class="card-info1">
+                    <a href="#"><p class="text-title1">Laura H. Benz</p></a>
+                    <a href="#"><p class="text-body1">Girl in Dark Prevanency</p></a>
+                    <a href="#"><p class="category1">Realista</p></a>
+                    <button class="card-button1">Ir à loja</button>
+                    <div class="icons-hover">
+                    <i class="fa-solid fa-heart" title="Adicionar aos favoritos"></i>
+                    <i class="fa-solid fa-basket-shopping" title="Adicionar a sacola"></i>
+                    <i class="fa-solid fa-share-nodes" title="Compartilhar"></i>
+                    </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="Imagens/D2.jpg" alt="">
+                    <div class="card-info2">
+                    <a href="#"><p class="text-title2">Milla Amano</p></a>
+                    <a href="#"><p class="text-body2">The Think</p></a>
+                    <a href="#"><p class="category2">Realista</p></a>
+                    <button class="card-button2">Ir à loja</button>
+                    <div class="icons-hover">
+                    <i class="fa-solid fa-heart" title="Adicionar aos favoritos"></i>
+                    <i class="fa-solid fa-basket-shopping" title="Adicionar a sacola"></i>
+                    <i class="fa-solid fa-share-nodes" title="Compartilhar"></i>
+                    </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="Imagens/anime1.jpg" alt="">
+                    <div class="card-info3">
+                    <a href="#"><p class="text-title3">Sam Tsuo</p></a>
+                    <a href="#"><p class="text-body3">Moments of Carla with yours pink butterfly</p></a>
+                    <a href="#"><p class="category3">anime</p></a>
+                    <button class="card-button3">Ir à loja</button>
+                    <div class="icons-hover">
+                    <i class="fa-solid fa-heart" title="Adicionar aos favoritos"></i>
+                    <i class="fa-solid fa-basket-shopping" title="Adicionar a sacola"></i>
+                    <i class="fa-solid fa-share-nodes" title="Compartilhar"></i>
+                    </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="Imagens/D3.jpg" alt="">
+                    <div class="card-info4">
+                    <a href="#"><p class="text-title4">Walison Corbat</p></a>
+                    <a href="#"><p class="text-body4">Anna</p></a>
+                    <a href="#"><p class="category4">Pintura</p></a>
+                    <button class="card-button4">Ir à loja</button>
+                    <div class="icons-hover">
+                    <i class="fa-solid fa-heart" title="Adicionar aos favoritos"></i>
+                    <i class="fa-solid fa-basket-shopping" title="Adicionar a sacola"></i>
+                    <i class="fa-solid fa-share-nodes" title="Compartilhar"></i>
+                    </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="Imagens/D4.jpg" alt="">
+                    <div class="card-info5">
+                    <a href="#"><p class="text-title5">Daniel Silva</p></a>
+                    <a href="#"><p class="text-body5">O Gato Sobre Ouro Azul</p></a>
+                    <a href="#"><p class="category5">Abstrato</p></a>
+                    <button class="card-button5">Ir à loja</button>
+                    <div class="icons-hover">
+                    <i class="fa-solid fa-heart" title="Adicionar aos favoritos"></i>
+                    <i class="fa-solid fa-basket-shopping" title="Adicionar a sacola"></i>
+                    <i class="fa-solid fa-share-nodes" title="Compartilhar"></i>
+                    </div>
+                    </div>
+                </li>
+                </ul>
+                </div> 
+                
+            </section>
+
+            <h3 id="abstrato">Abstrato</h3><h3 class="visitar-secao"><a href="#">+</a></h3>
+            <section class="abstrato_container swiper mySwiper reveal">
+
+
+                <div class="abstrato swiper-wrapper">
+
+                    
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Mateus Arruda - A vingança da floresta<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/abstrato14.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Elaine Lima - O ofusco da face<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/abstrato13.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Elfiha Alim - Endless in circles<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/abstrato12.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Tiago Versali - Renascimento<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/abstrato11.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Maria Lima - Explosões em camadas<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/abstrato10.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Herbert Ovalai - The fissure in colors<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/abstrato7.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >João da Silva - sobre concepções<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/abstrato9.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Margarett CH - A luta azul<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/abstrato3.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Amanda Lima - No turbilhão de cores eu nasci<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/abstrato8.jpg" alt="descrição">
+
+                </div>
+                <i class="fa-solid fa-alicorn"></i>
+                <i class="fa-solid fa-circle-info" title="Informações sobre a arte, no canto superior esquerdo das imagens."></i>
+                <i class="fa-solid fa-arrow-right-to-line fa-beat">></i>
+
+            </section>
+
+            <h3 id="anime">Anime</h3><h3 class="visitar-secao"><a href="#">+</a></h3>
+            <section class="anime_container swiper mySwiper reveal">
+
+                <div class="anime swiper-wrapper">
+
+                    <div class="info-anime"><a  href="#" target="_blank" >Mateus Arruda - A vingança da floresta<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/anime1.jpg" alt="descrição">
+
+                    <div class="info-anime"><a  href="#" target="_blank" >Elaine Lima - O ofusco da face<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/anime2.jpg" alt="descrição">
+
+                    <div class="info-anime"><a  href="#" target="_blank" >Elfiha Alim - Endless in circles<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/anime3.jpg" alt="descrição">
+
+                    <div class="info-anime"><a  href="#" target="_blank" >Tiago Versali - Renascimento<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/anime4.jpg" alt="descrição">
+
+                    <div class="info-anime"><a  href="#" target="_blank" >Maria Lima - Explosões em camadas<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/anime5.jpg" alt="descrição">
+
+                    <div class="info-anime"><a  href="#" target="_blank" >Herbert Ovalai - The fissure in colors<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/anime6.jpg" alt="descrição">
+
+                    <div class="info-anime"><a  href="#" target="_blank" >Amanda Lima - No turbilhão de cores eu nasci<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/anime7.jpg" alt="descrição">
+
+                    <div class="info-anime"><a  href="#" target="_blank" >Margarett CH - A luta azul<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/anime8.jpg" alt="descrição">
+
+                    <div class="info-anime"><a  href="#" target="_blank" >Amanda Lima - No turbilhão de cores eu nasci<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/anime9.jpg" alt="descrição">
+
+                </div>
+                <i class="fa-solid fa-circle-info" title="Informações sobre a arte, no canto superior esquerdo das imagens."></i>
+                <i class="fa-solid fa-arrow-right-to-line fa-beat">></i>
+            </section>
+
+
+            <h3 id="cartoon">Cartoon</h3><h3 class="visitar-secao"><a href="#">+</a></h3>
+            <section class="cartoon_container swiper mySwiper reveal">
+
+                <div class="cartoon swiper-wrapper">
+
+                    <div class="info-anime"><a  href="#" target="_blank" >Mateus Arruda - A vingança da floresta<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/cartoon1.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Elaine Lima - O ofusco da face<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/cartoon2.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Elfiha Alim - Endless in circles<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/cartoon3.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Tiago Versali - Renascimento<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/cartoon4.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Maria Lima - Explosões em camadas<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/cartoon5.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Herbert Ovalai - The fissure in colors<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/cartoon6.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Amanda Lima - No turbilhão de cores eu nasci<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/cartoon7.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Margarett CH - A luta azul<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/cartoon8.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Amanda Lima - No turbilhão de cores eu nasci<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/cartoon9.jpg" alt="descrição">
+
+                </div>
+                <i class="fa-solid fa-circle-info" title="Informações sobre a arte, no canto superior esquerdo das imagens."></i>
+                <i class="fa-solid fa-arrow-right-to-line fa-beat">></i>
+            </section>
+
+
+            <h3 id="manga">Mangá</h3><h3 class="visitar-secao"><a href="#">+</a></h3>
+            <section class="manga_container swiper mySwiper reveal">
+
+                <div class="manga swiper-wrapper">
+
+                    <div class="info-manga"><a  href="#" target="_blank" >Mateus Arruda - A vingança da floresta<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/manga7.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Elaine Lima - O ofusco da face<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/manga2.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Elfiha Alim - Endless in circles<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/manga3.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Tiago Versali - Renascimento<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/manga4.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Maria Lima - Explosões em camadas<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/manga5.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Herbert Ovalai - The fissure in colors<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/manga6.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Amanda Lima - No turbilhão de cores eu nasci<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/manga7.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Margarett CH - A luta azul<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/manga8.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Amanda Lima - No turbilhão de cores eu nasci<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/manga9.jpg" alt="descrição">
+
+                </div>
+                <i class="fa-solid fa-circle-info" title="Informações sobre a arte, no canto superior esquerdo das imagens."></i>
+                <i class="fa-solid fa-arrow-right-to-line fa-beat">></i>
+            </section>
+
+
+            <h3 id="realista">Realista</h3><h3 class="visitar-secao"><a href="#">+</a></h3>
+            <section class="realista_container swiper mySwiper reveal">
+                
+                <div class="realista swiper-wrapper">
+
+                    <div class="info-realista"><a  href="#" target="_blank" >Mateus Arruda - A vingança da floresta<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/realista1.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Elaine Lima - O ofusco da face<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/realista2.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Elfiha Alim - Endless in circles<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/realista3.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Tiago Versali - Renascimento<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/realista4.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Maria Lima - Explosões em camadas<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/realista5.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Herbert Ovalai - The fissure in colors<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/realista6.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Amanda Lima - No turbilhão de cores eu nasci<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/realista7.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Margarett CH - A luta azul<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/realista8.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Amanda Lima - No turbilhão de cores eu nasci<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/realista9.jpg" alt="descrição">
+
+                </div>
+                <i class="fa-solid fa-circle-info" title="Informações sobre a arte, no canto superior esquerdo das imagens."></i>
+                <i class="fa-solid fa-arrow-right-to-line fa-beat">></i>
+            </section>
+
+            <h3 id="pintura">Pintura</h3><h3 class="visitar-secao"><a href="#">+</a></h3>
+            <section class="pintura_container swiper mySwiper reveal">
+                
+                <div class="pintura swiper-wrapper">
+
+                    <div class="info-pintura"><a  href="#" target="_blank" >Mateus Arruda - A vingança da floresta<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/pintura1.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Elaine Lima - O ofusco da face<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/pintura2.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Elfiha Alim - Endless in circles<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/pintura3.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Tiago Versali - Renascimento<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/pintura4.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Maria Lima - Explosões em camadas<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/pintura5.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Herbert Ovalai - The fissure in colors<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/pintura6.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Amanda Lima - No turbilhão de cores eu nasci<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/pintura7.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Margarett CH - A luta azul<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/pintura8.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Amanda Lima - No turbilhão de cores eu nasci<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/pintura9.jpg" alt="descrição">
+
+                </div>
+                <i class="fa-solid fa-circle-info" title="Informações sobre a arte, no canto superior esquerdo das imagens."></i>
+                <i class="fa-solid fa-arrow-right-to-line fa-beat">></i>
+
+            </section>
+
+
+            <h3 id="tresd">3D</h3><h3 class="visitar-secao"><a href="#">+</a></h3>
+            <section class="tresd_container swiper mySwiper reveal">
+                <div class="tresd swiper-wrapper">
+
+                    <div class="info-tresd"><a  href="#" target="_blank" >Mateus Arruda - A vingança da floresta<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/3d1.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Elaine Lima - O ofusco da face<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/3d2.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Elfiha Alim - Endless in circles<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/3d3.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Tiago Versali - Renascimento<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/3d4.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Maria Lima - Explosões em camadas<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/3d5.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Herbert Ovalai - The fissure in colors<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/3d6.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Amanda Lima - No turbilhão de cores eu nasci<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/3d7.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Margarett CH - A luta azul<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/3d8.jpg" alt="descrição">
+
+                    <div class="info-abstrato"><a  href="#" target="_blank" >Amanda Lima - No turbilhão de cores eu nasci<button class="card-button1 button-section">Ir à loja</button></a></div>
+                    <img class="swiper-slide" src="Imagens/3d9.jpg" alt="descrição">
+
+                </div>
+
+                <i class="fa-solid fa-circle-info" title="Informações sobre a arte, no canto superior esquerdo das imagens."></i>
+                <i class="fa-solid fa-arrow-right-to-line fa-beat">></i>
+            </section>
+                <hr>
+
+                <h1 class="titulo-fim-de-secao reveal">A maior plataforma de arte<br> digital do Brasil.</h1> 
+
+                <h3 class="title-section-cards reveal">Artista, aproveite nossos planos para dar um UP! nas vendas.</h3>
+                    <section class="planos_container reveal">
+
+                    <div class="plano-black">
+
+                        <div class="card-black">
+                            <img class="anel-black" src="Imagens/anel-black.png" alt="descrição">
+                            <div class="pricecontainer-black">
+                                <p class="title-black">Black</p>
+                              <p class="price-black">R$9,90</p>
+                              <p class="pricedescriptor-black">/mês</p>
+                              <a href=""><p class="saiba-mais-card-rosa">Saiba mais</p></a>
+                            </div>
+                            <p class="includes-black">O plano inclui:</p>
+                            <ul class="benefitlist-black">
+                              <li>- Certificado de originalidade de suas artes.</li>
+                              <li>- 1 Card destaque na respectiva seção por 24h.</li>
+                            </ul>
+                            <div class="btncontainer-plans">
+                              <button>Escolher</button>
+                            </div>
+                          </div>
+                    </div>
+              
+                    <div class="plano-ouro">
+
+                        <div class="card-ouro">
+                            <img class="anel-ouro" src="Imagens/anel-ouro.png" alt="descrição">
+                            <div class="pricecontainer-ouro">
+                                <p class="title-ouro">Ouro</p>
+                              <p class="price-ouro">R$19,90</p>
+                              <p class="pricedescriptor-ouro">/mês</p>
+                              <a href=""><p class="saiba-mais-card-rosa">Saiba mais</p></a>
+                            </div>
+                            <p class="includes-ouro">O plano inclui:</p>
+                            <ul class="benefitlist-ouro">
+                              <li>- Certificado de originalidade de suas artes.</li>
+                              <li>- 1 Card destaque na respectiva seção, por 24h.</li>
+                              <li>- 1 Card destaque na seção 'Destaques' por 24h.</li>
+                            </ul>
+                            <div class="btncontainer-plans">
+                              <button>Escolher</button>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="plano-rosa">
+
+                        <div class="card-rosa">
+                            <img class="anel-rosa" src="Imagens/anel-rosa.png" alt="descrição">
+                            <div class="pricecontainer-rosa">
+                                <p class="title-rosa">Rosa</p>
+                              <p class="price-rosa">R$29,90</p>
+                              <p class="pricedescriptor-rosa">/mês</p>
+                              <a href=""><p class="saiba-mais-card-rosa">Saiba mais</p></a>
+                            </div>
+                            <p class="includes-rosa">O plano inclui:</p>
+                            <ul class="benefitlist-rosa">
+                              <li>- Certificado de originalidade de suas artes.</li>
+                              <li>- 1 Card destaque na respectiva seção, por 2 dias.</li>
+                              <li>- 1 Card destaque na seção 'Destaques' por 2 dias.</li>
+                              <li>- 1 Banner na seção principal por 24h.</li>
+
+                            </ul>
+                            <div class="btncontainer-plans">
+                              <button>Escolher</button>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+
+                </section>
+                
+                <section class="ayelo-video-rodape">
+                    <video src="Videos/Background video aylo rodapé.mp4" autoplay loop muted></video>
+                    <h1 class="aylo-video-background">A vitrine maravilhosa do artista digital.</h1>
+                </section>
+
+        <script src="script.js"></script>
+
+        <footer>
+          <div class="topicos-rodape">
+            <div class="topicos-rodape-1">
+                <p class="h1-topico-rodape-1">Aeylo</p>
+                <ul>
+                    <li><a href="#">Institucional</a></li>
+                    <li><a href="#">Investidor</a></li>
+                    <li><a href="#">Inovação</a></li>
+                    <li><a href="#">Missão</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="topicos-rodape-2">
+                <p class="h1-topico-rodape-2">Site</p>
+                <ul>
+                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="#">Conta</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Formas de pagamento</a></li>
+                    <li><a href="#">Publicidade</a></li>
+                    <li><a href="#">Mapa do site</a></li>
+                    <li><a href="#">Meus downloads</a></li>
+                </ul>
+            </div>
+            
+            <div class="redes-sociais">
+                <p class="h1-topico-rodape-3">Redes sociais</p>
+                    <a href="#"><i id="facebook" class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i id="instagram" class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i id="linkedin" class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i id="twitter" class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i id="youtube" class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i id="whatsapp" class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>  
+            <hr class="hr-rodape">
+
+            <p class="desenvolvimento">Desenvolvimento</p>
+            <a href="#" target="_blank"><img class="logo-web-c" src="Imagens/logo-web-c.png" alt="logo da web-c"></a>
+            <p class="direitos-reservados">© Todos os direitos reservados. aeylo - 2023</p>
+
+        </footer>
+
+</body>
+
+
+
