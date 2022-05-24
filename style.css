@@ -5,7 +5,7 @@ html{
 }
 
 body{
-    
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -884,7 +884,6 @@ hr{
 }
 
 .ayelo-video-rodape{
-    overflow-x: hidden;
     width: 100%;
     margin-top: 25em;
     position: relative;
@@ -1377,6 +1376,7 @@ nav li :hover{
 .swiper{
     width: 100%;
     position: relative;
+    overflow-x: hidden;
 
 }
 
@@ -1520,6 +1520,7 @@ hr{
 }
 
 .btncontainer-plans button {
+    overflow-x: hidden;
     padding: .7em 1.5em;
     font-size: 1em;
     margin-top: 4.5em;
