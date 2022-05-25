@@ -1,8 +1,3 @@
-html{
-    scroll-behavior: smooth;
-    
-
-}
 
 body{
     overflow-x: hidden;
@@ -16,6 +11,7 @@ body{
 img{
     max-width: 100%;
     height: auto;
+    
 }
 
 ::selection{
@@ -1596,7 +1592,7 @@ footer{
 
 .redes-sociais{
     margin-top: 1.5em;
-    margin-left: 14.5em;
+    margin-left: 13em;
     text-align: left;
     display: flex;
 
