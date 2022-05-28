@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+
+}
 
 body{
     overflow-x: hidden;
@@ -879,6 +883,18 @@ hr{
 
 }
 
+.gotop-btn{
+    font-size: 1.4em;
+    margin: 10em 5em 0 110em;
+    padding: 1.2em;
+    color: #fff;
+    background-color: #FF77CB;
+    border-radius: .2em;
+    float: right;
+    position: relative;
+
+}
+
 .ayelo-video-rodape{
     width: 100%;
     margin-top: 25em;
@@ -1525,6 +1541,11 @@ hr{
 
 }
 
+.gotop-btn{
+    display: none;
+
+}
+
 .aylo-video-background{
     width: 100%;
     padding: 2em;
@@ -1951,6 +1972,11 @@ margin-top: -2.2em;
     font-size: .8em;
     margin-top: 4.4em;
     margin-left: 1.7em;
+
+}
+
+.gotop-btn{
+    display: none;
 
 }
 
