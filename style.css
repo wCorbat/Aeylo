@@ -19,8 +19,8 @@ img{
 }
 
 ::selection{
-    background-color: #FF77CB;
-    color: #FFF;
+    background-color: #ff77cb;
+    color: #fff;
 
 }
 
@@ -28,7 +28,7 @@ header{
     background-color: #000;
     width: 100%;
     height: 100px;
-    color: white;
+    color: #fff;
     position: fixed;
     z-index: 50;
     margin-top: -1.5em;
@@ -63,7 +63,7 @@ header{
 
 #o a{
     text-decoration: none;
-    color: #FF77CB;
+    color: #ff77cb;
     font-family: 'Josefin Sans';
 
 }
