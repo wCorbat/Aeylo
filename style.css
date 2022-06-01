@@ -611,7 +611,6 @@ nav li :hover{
 .swiper{
     width: 75%;
     position: relative;
-
 }
 
 .abstrato_container img, .anime_container img, .cartoon_container img, .manga_container img, .realista_container img, .pintura_container img, .tresd_container img{
@@ -897,7 +896,7 @@ hr{
 }
 
 .ayelo-video-rodape{
-    width: 88.7%;
+    width: 100%;
     margin-top: 25em;
     position: relative;
     
@@ -905,6 +904,7 @@ hr{
 }
 
 .ayelo-video-rodape video{
+    
     width: 100%;
     height: 100%;
     margin: auto;
@@ -1387,7 +1387,7 @@ nav li :hover{
 }
 
 .swiper{
-    width: 100%;
+    width: 155%;
     position: relative;
     overflow-x: hidden;
 
@@ -1552,11 +1552,6 @@ hr{
     margin-left: -2em;
     text-align: center;
     font-size: 1em;
-    
-}
-
-.ayelo-video-rodape{
-    width: 93%;   
     
 }
 
@@ -2360,14 +2355,6 @@ hr{
     margin-left: -2em;
     text-align: center;
 
-}
-
-.ayelo-video-rodape{
-    width: 93%;
-    margin-top: 25em;
-    position: relative;
-    
-    
 }
 
 .h1-topico-rodape-1{
