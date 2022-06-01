@@ -1387,7 +1387,7 @@ nav li :hover{
 }
 
 .swiper{
-    width: 155%;
+    width: 100%;
     position: relative;
     overflow-x: hidden;
 
