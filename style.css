@@ -1,11 +1,6 @@
 html{
     scroll-behavior: smooth;
 
-
-}
-
-html:hover{
-    transition: 1s;
 }
 
 body{
@@ -2636,3 +2631,7 @@ nav li :hover{
 - Dispositivos mobile real ficam com barra horizontal
 
 */
+
+.terra{
+    margin: 20em;
+}
