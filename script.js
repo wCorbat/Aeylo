@@ -1,5 +1,6 @@
 
 /* Slide */
+
 var counter = 1;
 setInterval(function(){
 document.getElementById('radio' + counter).checked = true;
@@ -8,6 +9,8 @@ if(counter > 4){
 counter = 1;
 }
 }, 6000);
+
+/* Efeito mostrar as imagens ao rolar a página pela primeira vez*/
 
 $(window).on("load scroll", function(){
     var threshold = 30; // porcentagem da altura visível do elemento que aparecer na tela para iniciar a animação
@@ -24,7 +27,6 @@ $(window).on("load scroll", function(){
      });
  });
 
-
 /* Menu Hamburguer Mobile */
 
 const btnMobile = document.getElementById('btn-mobile');
@@ -37,7 +39,7 @@ function toggleMenu(){
 btnMobile.addEventListener('click', toggleMenu);
 
 
-/* Initialize Swiper */
+/* Initialize Swiper - carrossel das sections*/
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
