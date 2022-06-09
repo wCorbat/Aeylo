@@ -24,6 +24,10 @@ img{
 
 }
 
+.mostrar{
+    opacity: 0;
+}
+
 header{
     background-color: #000;
     width: 100%;

@@ -7,7 +7,6 @@
     <meta name="author" content="Walison Corbat">
     <meta name="description" content="Plataforma para divulgação de trabalhos digitais">
     <meta name="keywords" content="Aeylo, ilustrações digitais, animes, mangás, arte 3d, realistas">
-    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Fontes/Corporate A Light.ttf">
     <link rel="stylesheet" href="Fontes/fontawesome-free-6.1.0-web/css/all.min.css">
@@ -18,8 +17,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="icon" type="image/x-icon" href="Imagens/favicon-aeylo.png"> 
+
   
 
     <title>aeylo - A vitrine maravilhosa do artista digital</title>
@@ -34,7 +35,7 @@
             <i class="fa-solid fa-bag-shopping"></i>
         </header>
 
-        <nav id="nav" reveal>
+        <nav id="nav">
             <span id="hamburguer"></span>
                 <button id="btn-mobile">menu</button>
 
@@ -51,7 +52,7 @@
         
         <!--image slider start-->
         <div class="slider">
-            <div class="slides reveal">
+            <div class="slides mostrar">
 
                 <!--radio button start-->
                 <input type="radio" name="radio-btn" id="radio1">
@@ -103,7 +104,7 @@
         </div>
 
         <h3 id="destaques">Destaques</h3>
-        <section class="destaques_container reveal">
+        <section class="destaques_container mostrar">
             <div class="grid-wrap">
                 <ul>
                 <li>
@@ -182,7 +183,7 @@
             </section>
 
             <h3 id="abstrato">Abstrato</h3><h3 class="visitar-secao"><a href="#">+</a></h3>
-            <section class="abstrato_container swiper mySwiper reveal">
+            <section class="abstrato_container swiper mySwiper mostrar">
 
 
                 <div class="abstrato swiper-wrapper">
@@ -223,7 +224,7 @@
             </section>
 
             <h3 id="anime">Anime</h3><h3 class="visitar-secao"><a href="#">+</a></h3>
-            <section class="anime_container swiper mySwiper reveal">
+            <section class="anime_container swiper mySwiper mostrar">
 
                 <div class="anime swiper-wrapper">
 
@@ -261,7 +262,7 @@
 
 
             <h3 id="cartoon">Cartoon</h3><h3 class="visitar-secao"><a href="#">+</a></h3>
-            <section class="cartoon_container swiper mySwiper reveal">
+            <section class="cartoon_container swiper mySwiper mostrar">
 
                 <div class="cartoon swiper-wrapper">
 
@@ -299,7 +300,7 @@
 
 
             <h3 id="manga">Mangá</h3><h3 class="visitar-secao"><a href="#">+</a></h3>
-            <section class="manga_container swiper mySwiper reveal">
+            <section class="manga_container swiper mySwiper mostrar">
 
                 <div class="manga swiper-wrapper">
 
@@ -337,7 +338,7 @@
 
 
             <h3 id="realista">Realista</h3><h3 class="visitar-secao"><a href="#">+</a></h3>
-            <section class="realista_container swiper mySwiper reveal">
+            <section class="realista_container swiper mySwiper mostrar">
                 
                 <div class="realista swiper-wrapper">
 
@@ -374,7 +375,7 @@
             </section>
 
             <h3 id="pintura">Pintura</h3><h3 class="visitar-secao"><a href="#">+</a></h3>
-            <section class="pintura_container swiper mySwiper reveal">
+            <section class="pintura_container swiper mySwiper mostrar">
                 
                 <div class="pintura swiper-wrapper">
 
@@ -413,7 +414,7 @@
 
 
             <h3 id="tresd">3D</h3><h3 class="visitar-secao"><a href="#">+</a></h3>
-            <section class="tresd_container swiper mySwiper reveal">
+            <section class="tresd_container swiper mySwiper mostrar">
                 <div class="tresd swiper-wrapper">
 
                     <div class="info-tresd"><a  href="#" target="_blank" >Mateus Arruda - A vingança da floresta<button class="card-button1 button-section">Ir à loja</button></a></div>
@@ -450,10 +451,10 @@
             </section>
                 <hr>
 
-                <h1 class="titulo-fim-de-secao reveal">A maior plataforma de arte<br> digital do Brasil.</h1> 
+                <h1 class="titulo-fim-de-secao mostrar">A maior plataforma de arte<br> digital do Brasil.</h1> 
 
-                <h3 class="title-section-cards reveal">Artista, aproveite nossos planos para dar um UP! nas vendas.</h3>
-                    <section class="planos_container reveal">
+                <h3 class="title-section-cards mostrar">Artista, aproveite nossos planos para dar um UP! nas vendas.</h3>
+                    <section class="planos_container mostrar">
 
                     <div class="plano-black">
 
@@ -526,13 +527,13 @@
 
                 </section>
                 <a class="gotop-btn" href="#"><i class="fa-solid fa-chevron-up fa-beat"></i></a>
-                <section class="ayelo-video-rodape">
-                    <video src="Videos/Background video aylo rodapé.mp4" autoplay loop muted></video>
-                    <h1 class="aylo-video-background">A vitrine maravilhosa do artista digital.</h1>
+                <section class="ayelo-video-rodape mostrar">
+                    <video class="mostrar" src="Videos/Background video aylo rodapé.mp4" autoplay loop muted></video>
+                    <h1 class="aylo-video-background mostar">A vitrine maravilhosa do artista digital.</h1>
                 </section>
 
         <script src="script.js"></script>
-
+        
         
 
         <footer>
