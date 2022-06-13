@@ -13,6 +13,154 @@
 
 .banner{
     width: 33%;
-    margin: 1.5% 0 0 8%;
+    margin: 1.5% 0 0 18%;
 
 }
+
+/* From uiverse.io by @mrhyddenn */
+.form_group {
+    position: relative;
+    padding: 1.5em 0 0;
+    margin: 15em 20em 0 0;
+    float: right;
+    width: 100%;
+    max-width: 24em;
+    font-family: 'Josefin Sans';
+
+  }
+  
+  .form_field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: #000;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+  }
+  
+  .form_field::placeholder {
+    color: transparent;
+  }
+  
+  .form_field:placeholder-shown ~ .form_label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form_label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: rgb(65, 65, 65);
+    pointer-events: none;
+    font-weight: bold;
+  }
+  
+  .form_field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to bottom, #ff56c6, #ffa6dd);
+    border-image-slice: 1;
+  }
+  
+  .form_field:focus ~ .form_label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #ff56c6;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form_field:required, .form_field:invalid {
+    box-shadow: none;
+  }
+
+
+
+  .form_group2 {
+    position: relative;
+    padding: 1.5em 0 0;
+    margin: -36em 20em 0 0;
+    float: right;
+    width: 100%;
+    max-width: 24em;
+    font-family: 'Josefin Sans';
+
+  }
+
+  
+  .form_field2 {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: #000;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+
+  }
+  
+  .form_field2::placeholder {
+    color: transparent;
+  }
+  
+  .form_field2:placeholder-shown ~ .form_label2 {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+    
+  }
+  
+  .form_label2 {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: rgb(65, 65, 65);
+    pointer-events: none;
+    font-weight: bold;
+
+  }
+  
+  .form_field2:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to bottom, #ff56c6, #ffa6dd);
+    border-image-slice: 1;
+    
+  }
+  
+  .form_field2:focus ~ .form_label2 {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #ff56c6;
+    font-weight: 700;
+    
+  }
+  
+  /* reset input */
+  .form_field2:required, .form_field2:invalid {
+    box-shadow: none;
+    
+  }
